@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ToDoListV2</string>
+    <string name="title_add_task">Add Task</string>
+    <string name="Done_text">Done</string>
+    <string name="Edit_text">Edit</string>
+    <string name="Version">Version : 0.0.2</string>
+    <string name="NameText">Name : </string>
+    <string name="about_entete">Cette application a pour but :</string>
+    <string name="about">List de choses a faires modifiables et supprimables</string>
+</resources>

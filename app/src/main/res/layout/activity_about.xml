@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/mainBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarAbout"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/menuBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Version"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:layout_below="@id/toolbarAbout"
+        android:id="@+id/layout_about_appName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NameText"
+            android:layout_weight="50"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_weight="50"
+            android:textSize="20sp"
+            android:textColor="#FF0000"
+            android:gravity="start"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_about_entete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_about_appName"
+        android:text="@string/about_entete"
+        android:textStyle="italic"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/text_about_entete"
+        android:text="@string/about"/>
+
+</RelativeLayout>
